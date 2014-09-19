@@ -86,7 +86,7 @@ header .header__callme h3 { color: #3e3e3e; font-size: 14px; display: inline-blo
 header .header__callme h3 span { font-family: "open_sansbold"; font-weight: normal; font-style: normal; }
 header .header__callme a { vertical-align: top; }
 header .header__text { float: left; width: 500px; margin-top: 140px; }
-header .header__text h3 { font-family: "open_sanssemibold"; font-weight: normal; font-style: normal; color: white; display: inline-block; font-size: 46px; background: #56caca; padding: 0 20px; margin-bottom: 5px; line-height: 1em; }
+header .header__text h3 { font-family: "open_sanssemibold"; font-weight: normal; font-style: normal; color: white; display: inline-block; font-size: 46px; background: #56caca; padding: 3px 20px 8px; margin-bottom: 5px; line-height: 1em; }
 header .header__text h4, header .header__text .frm h5, .frm header .header__text h5 { font-size: 28px; color: #535353; font-family: "open_sanslight"; font-weight: normal; font-style: normal; margin-top: 10px; }
 header .header__text h5 { position: relative; font-family: "open_sansbold"; font-weight: normal; font-style: normal; font-size: 18px; margin-top: 90px; padding-left: 18px; }
 header .header__text h5:before { position: absolute; content: ""; border-left: solid 5px #56caca; top: 4px; bottom: 4px; left: 0; }
