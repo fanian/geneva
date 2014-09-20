@@ -277,31 +277,184 @@ header
         margin-left: 100px
   .why__img
     float: left
+    img
+      vertical-align: bottom
+
+.quality
+  .quality_in
+    @extend %in
+  img
+    display: block
+  .row
+    height: 239px
+  .text
+    padding: 20px 25px
+    text-align: left
+    line-height: 1.5em
+  .text--right
+    text-align: right
+  .quality__caption
+    position: relative
+    background: rgb(86,202,202)
+    +osr
+    font-size: 43px
+    line-height: 1.2em
+    padding: 40px 30px
+    color: #ffffff
+    &:after
+      position: absolute
+      content: ""
+      +s(wave)
+      bottom: 62px
+      left: 50%
+      +transform(translate(-50%))
+    span
+      +osb
+  .quality__description
+    h4
+      font-size: 20px
+      +osb
+    li
+      margin-top: 8px
+    text-align: left
+    padding: 20px 50px
+    span
+      +osb
 
 
 .order
-  padding-top: 120px
+  padding-top: 70px
+  margin-top: -1px
+  background: url(../img/order_bg.png) center center no-repeat
+  +background-size(cover)
+  height: 481px
   +clr
+  +box
   .order_in
     @extend %in
-    +clr
+    position: relative
+    &:before
+      position: absolute
+      content: ""
+      top: 25px
+      +s(wave2)
+      left: 50%
+      +transform(translate(-50%))
+    &:after
+      position: absolute
+      content: ""
+      height: 0
+      border-bottom: solid 1px rgba(#e6be73,.34)
+      left: 95px
+      right: 150px
+      bottom: 91px
+
   .order__item
     text-align: center
     display: inline-block
-    width: 220px
-    margin-right: 20px
+    width: 200px
+    margin-right: 45px
     vertical-align: top
-    margin-top: 60px
+    margin-top: 80px
     &:last-child
       margin-right: 0
     .order__img
-      height: 77px
+      display: inline-block
+      height: 92px
+      width: 92px
+      background: #ffffff
+      +border-radius(50%)
       margin-bottom: 10px
+      .vertical-centered
+        vertical-align: middle
+        display: inline-block
+        height: 100%
+      img
+        vertical-align: middle
+    .circle
+      position: relative
+      width: 23px
+      height: 23px
+      border: solid 1px rgba(#e6be73,.34)
+      +border-radius(50%)
+      margin: 15px auto 17px
+      .dot
+        +border-radius(50%)
+        width: 9px
+        height: 9px
+        margin-top: 7px
+        margin-left: 7px
+        background: #e4b04c
+        display: block
+
+
+
     p
-      font-family: 'open_sansregular'
-      font-size: 17px
-      color: #242424
+      +osl
+      font-size: 14px
+      color: #4d4347
       padding: 12px
+      text-align: left
+      position: relative
+      display: inline-block
+      .number
+        position: absolute
+        left: -20px
+        content: ""
+        top: 2px
+        font-size: 42px
+        color: #d1a249
+        +osr
+
+
+.review
+  padding-top: 70px
+  +box
+  +clr
+
+  .review_in
+    @extend %in
+    &:before
+      position: absolute
+      content: ""
+      top: 25px
+      +s(wave2)
+      left: 50%
+      +transform(translate(-50%))
+  &__item
+    display: inline-block
+    width: 307px
+  &__caption
+    h3
+      +osb
+      font-size: 18px
+      color: #56caca
+    h4
+      font-size: 12px
+      +osr
+      color: #949494
+  &__img
+    float: left
+    width: 53px
+    height: 53px
+    margin-right: 15px
+    img
+      +border-radius(50%)
+  &__text
+    border: 1px solid #e2e2e2
+    +border-radius(5px)
+    padding: 25px
+    position: relative
+    font-size: 13px
+    +osr
+    margin-top: 30px
+    &:before
+      position: absolute
+      content: ''
+      top: -7px
+      left: 17px
+      +s(review_popup)
+
 
 
 .also
