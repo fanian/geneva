@@ -4,15 +4,14 @@ head.ready(function() {
 	// 	$(".js-popup").hide();
 	// });
 
-    $('#form1 form').validate();
-    $('#form5 form').validate();
+    $('#form1').validate();
+    $('#form5').validate();
     $('#form2').validate();
     $('#form3').validate();
     $('#form4').validate();
     $('#form6').validate();
-    $('#form7').validate();
 
-    $("#form1 form").ajaxForm({
+    $("#form1").ajaxForm({
         success: function () {
             $(".thanks-link").trigger('click');
         },
@@ -20,7 +19,7 @@ head.ready(function() {
             title: 'Спасибо!'
         }
     });
-    $("#form5 form").ajaxForm({
+    $("#form5").ajaxForm({
         success: function () {
             $(".thanks-link").trigger('click');
         },
@@ -60,28 +59,21 @@ head.ready(function() {
             title: 'Спасибо!'
         }
     });
-    $("#form7").ajaxForm({
-        success: function () {
-            $(".thanks-link").trigger('click');
-        },
-        data: {
-            title: 'Спасибо!'
-        }
-    });
 
-    var checker = document.getElementById('yes');
-    var sendbtn = document.getElementById('send');
-    sendbtn.disabled = true;
-    jQuery(document).ready(function($){
-        checker.onchange = function(){
-            if(this.checked){
-                sendbtn.disabled = false;
-            } else {
-                sendbtn.disabled = true;
-            }
 
-        };
-    });
+//    var checker = document.getElementById('yes');
+//    var sendbtn = document.getElementById('send');
+//    sendbtn.disabled = true;
+//    jQuery(document).ready(function($){
+//        checker.onchange = function(){
+//            if(this.checked){
+//                sendbtn.disabled = false;
+//            } else {
+//                sendbtn.disabled = true;
+//            }
+//
+//        };
+//    });
 
 
 
@@ -89,8 +81,7 @@ head.ready(function() {
         padding: 0,
         helpers: {
             overlay: {
-                locked: false,
-                css:{'background' : 'rgba(255, 255, 255, 0.9)'}
+                locked: false
             }
         },
         tpl: {
