@@ -54,6 +54,13 @@ input, textarea
   &:hover
     color: #ffffff
     background-color: lighten(#53c3c3, 10%)
+.button--blue
+  background-color: #55c9c9
+  +box-shadow(0 2px 0 #44aaa9, inset 0 -1px 0 rgba(255,255,255,.1))
+  color: #287c7c
+  font-size: 23px
+  &:hover
+    background-color: lighten(#55c9c9, 20%)
 .title
   text-align: center
   font-size: 43px
@@ -161,13 +168,14 @@ header
   &__watch
     float: left
     margin-top: -45px
-
+    +clr
   &__text
     float: left
     margin-left: 45px
     width: 400px
     margin-top: 40px
     position: relative
+    +clr
     h3
       font-size: 21px
       +osb
@@ -209,7 +217,16 @@ header
         right: 0
       span
         font-size: 21px
-
+  .button--blue
+    position: absolute
+    left: 50%
+    +transform(translate(-50%))
+    content: ""
+    padding-top: 20px
+    bottom: -45px
+    clear: both
+    +clr
+    +box-shadow(0 6px 25px -6px)
 
 
 
@@ -224,18 +241,42 @@ header
   .why_in
     @extend %in
     +clr
-  h2
-    font-size: 53px
-    color: #1a1a1a
-    float: left
+
   .why__text
+    text-align: left
     float: left
-    width: 565px
-    font-size: 18px
-    color: #414141
-    margin-top: 40px
+    width: 540px
+    font-size: 14px
+    color: #3e3e3e
+    margin-top: 70px
+    margin-left: -75px
+    line-height: 1.5em
+    +osl
+    h2
+      font-size: 34px
+      color: #3e3e3d
+      text-align: left
+      margin-bottom: 45px
+      +osr
+      span
+        +osb
+    p
+      span
+        +osb
+      &.break
+        margin-top: 7px
+      &.second
+        margin-top: 20px
+        margin-left: 30px
+        margin-bottom: 10px
+      &.third
+        margin-left: 60px
+      &.fourth
+        margin-left: 80px
+      &.fifth
+        margin-left: 100px
   .why__img
-    float: right
+    float: left
 
 
 .order
