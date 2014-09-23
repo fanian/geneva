@@ -165,12 +165,41 @@ header
     position: relative
 
   &__watch
+    width: 517px
+    height: 434px
     float: left
     margin-top: -45px
+    margin-left: -190px
     +clr
+  &__degree
+    position: absolute
+    top: 331px
+    left: 162px
+    width: 160px
+    height: 110px
+    z-index: 100
+    span
+      position: relative
+      +ossb
+      font-size: 24px
+      line-height: 1em
+      letter-spacing: 3px
+      padding-left: 50px
+      display: inline-block
+      &:before
+        position: absolute
+        content: ""
+        top: 8px
+        left: 0
+        +s(360)
+    p
+      font-size: 14px
+      color: #5a5a5a
+      +osl
+      width: 125px
   &__text
     float: left
-    margin-left: 45px
+    margin-left: -70px
     width: 400px
     margin-top: 40px
     position: relative
@@ -582,9 +611,17 @@ header
         left: 0
         bottom: 0
         +transform(none)
+  &__watch
+    width: 217px
+    height: 412px
+    margin-left: 0
+    position: relative
+    img
+      display: block
 
   &__text
     width: 360px
+    margin-left: 45px
 
 
 
